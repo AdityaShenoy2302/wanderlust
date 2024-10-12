@@ -1,0 +1,58 @@
+Model: Listing
+=> title
+=> description
+=> image
+=> price
+=> location
+=> country
+
+// for database data initialization used chatgpt for generating the listings but added image links on my own
+
+// index route - GET (/listings)
+// show route - GET(/listings/:id) CRUD(read)
+// create route(new and create) - GET(/listings/new)
+                                - POST(/listings)
+// update route(edit and update) - GET(/listings/:id/edit)
+                                 - PUT(/listings/:id)
+// delete route - DELETE(/listings/:id)
+
+// client side validation for forms and error handling
+// server side validation using joi api for schema validation
+
+// database relationships => https://www.mongodb.com/blog/post/6-rules-of-thumb-for-mongodb-schema-design
+
+Model: Reviews
+=> comment
+=> rating(1 to 5)
+=> createdAt(date and time)
+
+// listing and review => 1 to many relationship
+
+// create reviews - submitting the forms
+=> POST /listings/:id/reviews
+
+// restructuring code using express router to increase modularity and readability
+// implementing sessions using cookies
+
+Authentication: It is the process of verifying who someone is
+Authorization: It is the process of verifying what specific applications, files and data a user has access to
+
+// signup user => GET POST
+// login user => GET POST
+
+// post-login page
+-> path -> login -> path(redirectUrl)
+
+Implement MVC design pattern
+
+Image upload:
+1) form capable of sending files
+2) 3rd party service - save file - url/link
+3) save this link in mongo
+
+
+mongo-atlas
+username => adityashenoy2004
+password => 1OD2YpmeyyjWXE80
+
+mongodb+srv://adityashenoy2004:<db_password>@cluster0.gxhnr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
