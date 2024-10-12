@@ -49,10 +49,3 @@ Image upload:
 1) form capable of sending files
 2) 3rd party service - save file - url/link
 3) save this link in mongo
-
-
-mongo-atlas
-username => adityashenoy2004
-password => 1OD2YpmeyyjWXE80
-
-mongodb+srv://adityashenoy2004:<db_password>@cluster0.gxhnr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
